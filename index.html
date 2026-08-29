@@ -6,7 +6,7 @@
   <meta name="description" content="Project page for World Models for Autonomous Driving: From Future Generation to Decision Making, a survey organized around an MPC-oriented predictive transition interface.">
   <meta name="theme-color" content="#111517">
   <title>World Models for Autonomous Driving</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20260829-2">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -44,18 +44,12 @@
         </div>
 
         <div class="action-row">
-          <a class="button button-primary" href="assets/World-Models-for-Autonomous-Driving.pdf"><i data-lucide="file-text" aria-hidden="true"></i><span>Read paper</span></a>
-          <a class="button button-light" href="assets/refs.bib" download><i data-lucide="download" aria-hidden="true"></i><span>References</span></a>
+          <a class="button button-primary" href="assets/World-Models-for-Autonomous-Driving.pdf?v=20260829-2"><i data-lucide="file-text" aria-hidden="true"></i><span>Read paper</span></a>
+          <a class="button button-light" href="assets/refs.bib?v=20260829-2" download><i data-lucide="download" aria-hidden="true"></i><span>References</span></a>
           <a class="button button-ghost" href="#citation"><i data-lucide="quote" aria-hidden="true"></i><span>Cite</span></a>
         </div>
       </div>
 
-      <div class="hero-figure-shell">
-        <figure class="hero-figure">
-          <img src="assets/figures/roadmap.png" alt="Survey roadmap connecting the MPC-oriented interface, task-oriented taxonomy, comparison, evaluation, and open challenges">
-          <figcaption><span>Figure 1</span> Survey roadmap from predictive transition interface to taxonomy, comparison, evaluation, and open challenges.</figcaption>
-        </figure>
-      </div>
     </section>
 
     <section class="snapshot" aria-label="Survey at a glance">
@@ -81,6 +75,18 @@
         </div>
       </div>
 
+      <div class="roadmap-block">
+        <div class="roadmap-heading">
+          <p class="eyebrow">Survey structure</p>
+          <h3>From predictive transitions to safety evidence</h3>
+          <p>The roadmap links the paper's scope, MPC interface, taxonomy, comparison framework, evaluation ecology, and open challenges.</p>
+        </div>
+        <figure class="roadmap-figure">
+          <img src="assets/figures/roadmap.png?v=20260829-2" alt="Latest survey roadmap connecting the MPC-oriented interface, task-oriented taxonomy, comparison, evaluation, and open challenges">
+          <figcaption><span>Figure 1</span> Survey roadmap from predictive transition interface to taxonomy, comparison, evaluation, and open challenges.</figcaption>
+        </figure>
+      </div>
+
       <div class="contribution-list" aria-label="Main contributions">
         <article><span class="contribution-number">A</span><div><h3>Task-oriented taxonomy</h3><p>Separates future generation, planning with world models, and hybrid prediction-planning by primary role.</p></div></article>
         <article><span class="contribution-number">B</span><div><h3>MPC evidence framework</h3><p>Audits action-conditioned rollout, cost exposure, constraints, uncertainty, and receding-horizon replanning.</p></div></article>
@@ -97,7 +103,7 @@
         </div>
 
         <figure class="interface-figure">
-          <img src="assets/figures/mpc-information-flow.png" alt="MPC-oriented information flow in which candidate ego actions query a predictive transition and expose costs, constraints, uncertainty, and receding-horizon replanning">
+          <img src="assets/figures/mpc-information-flow.png?v=20260829-2" alt="MPC-oriented information flow in which candidate ego actions query a predictive transition and expose costs, constraints, uncertainty, and receding-horizon replanning">
           <figcaption><span>Figure 2</span> Candidate action sequences query a predictive transition; only the first selected action is executed before replanning.</figcaption>
         </figure>
 
@@ -120,7 +126,7 @@
       </div>
 
       <figure class="taxonomy-overview">
-        <img src="assets/figures/taxonomy.png" alt="Task-oriented taxonomy of autonomous-driving world models with future generation, planning, and hybrid prediction-planning roles">
+        <img src="assets/figures/taxonomy.png?v=20260829-2" alt="Task-oriented taxonomy of autonomous-driving world models with future generation, planning, and hybrid prediction-planning roles">
         <figcaption><span>Figure 3</span> Increasing integration between learned transition and decision modules, not increasing visual fidelity or dimensionality.</figcaption>
       </figure>
 
@@ -133,17 +139,17 @@
 
         <article class="taxonomy-panel is-active" id="role-generation" role="tabpanel" data-taxonomy-panel="generation">
           <div class="taxonomy-copy"><p class="role-index">Role 01</p><h3>Future world generation</h3><p>Rolls future scenes or structured states forward in visual, BEV, vector, occupancy, or LiDAR spaces. The primary evidence is generation, forecasting, controllability, or augmentation.</p><dl><div><dt>Strength</dt><dd>Rich, inspectable futures</dd></div><div><dt>Risk</dt><dd>Realism without actionability</dd></div></dl></div>
-          <figure><img src="assets/figures/future-generation.png" alt="Trade-offs among visual, BEV, occupancy, and LiDAR future world generation"></figure>
+          <figure><img src="assets/figures/future-generation.png?v=20260829-2" alt="Trade-offs among visual, BEV, occupancy, and LiDAR future world generation"></figure>
         </article>
 
         <article class="taxonomy-panel" id="role-planning" role="tabpanel" data-taxonomy-panel="planning" hidden>
           <div class="taxonomy-copy"><p class="role-index">Role 02</p><h3>Planning with world models</h3><p>Consumes imagined futures through trajectory evaluation, latent policy learning, or MPC-style rollout. The generated state and the decision module remain separable.</p><dl><div><dt>Strength</dt><dd>Traceable action scoring</dd></div><div><dt>Risk</dt><dd>Candidate and calibration limits</dd></div></dl></div>
-          <figure><img src="assets/figures/planning-world-models.png" alt="Planning with world models through trajectory evaluation, latent policy learning, and MPC-style rollout"></figure>
+          <figure><img src="assets/figures/planning-world-models.png?v=20260829-2" alt="Planning with world models through trajectory evaluation, latent policy learning, and MPC-style rollout"></figure>
         </article>
 
         <article class="taxonomy-panel" id="role-hybrid" role="tabpanel" data-taxonomy-panel="hybrid" hidden>
           <div class="taxonomy-copy"><p class="role-index">Role 03</p><h3>Hybrid prediction-planning</h3><p>Shares an observation-action objective, a latent or structured state, or an executable interaction loop across prediction and decision making.</p><dl><div><dt>Strength</dt><dd>Tighter task alignment</dd></div><div><dt>Risk</dt><dd>Entangled failure causes</dd></div></dl></div>
-          <figure><img src="assets/figures/hybrid-world-models.png" alt="Hybrid prediction-planning mechanisms with unified objectives, shared state, and interactive simulation"></figure>
+          <figure><img src="assets/figures/hybrid-world-models.png?v=20260829-2" alt="Hybrid prediction-planning mechanisms with unified objectives, shared state, and interactive simulation"></figure>
         </article>
       </div>
     </section>
@@ -229,7 +235,7 @@
           <div class="section-heading"><p class="eyebrow eyebrow-light">A dependency chain</p><h2>Reliable state first. Safety evidence last.</h2></div>
           <p>Representation determines what survives rollout. Rollout and interfaces determine decision utility. Computation limits how many futures can be queried. Safety validation depends on all of them.</p>
         </div>
-        <figure class="challenge-figure"><img src="assets/figures/future-challenges.png" alt="Five connected future challenges: representation, long-horizon reliability, generation-to-planning utility, efficient deployment, and safety evidence"></figure>
+        <figure class="challenge-figure"><img src="assets/figures/future-challenges.png?v=20260829-2" alt="Five connected future challenges: representation, long-horizon reliability, generation-to-planning utility, efficient deployment, and safety evidence"></figure>
         <div class="challenge-list">
           <article><span>01</span><h3>Long-horizon reliability</h3><p>Report where state error first changes the planner's action.</p></article>
           <article><span>02</span><h3>Multimodal representation</h3><p>Preserve geometry, topology, semantics, uncertainty, and control invariants.</p></article>
@@ -244,13 +250,13 @@
       <div class="section-label"><span>07</span> Authors</div>
       <div class="authors-heading"><h2>Survey team</h2><p>* Equal contribution</p></div>
       <div class="author-grid">
-        <article class="author-card"><img src="assets/photos/HuangH.jpg" alt="Han Huang"><div><h3>Han Huang*</h3><p>Tongji University</p><a href="https://orcid.org/0009-0006-9396-0642">ORCID</a></div></article>
-        <article class="author-card"><img src="assets/photos/YangDK.png" alt="Dingkang Yang"><div><h3>Dingkang Yang*</h3><p>Fudan University, CUHK MMLab</p><a href="https://orcid.org/0000-0003-1829-5671">ORCID</a></div></article>
-        <article class="author-card"><img src="assets/photos/GuoLL.jpg" alt="Lulu Guo"><div><h3>Lulu Guo</h3><p>Tongji University</p><a href="https://orcid.org/0000-0003-2285-2469">ORCID</a></div></article>
-        <article class="author-card"><img src="assets/photos/CJ.jpg" alt="Jing Cheng"><div><h3>Jing Cheng</h3><p>East China Normal University</p><a href="https://orcid.org/0009-0004-7297-627X">ORCID</a></div></article>
-        <article class="author-card"><img src="assets/photos/LiuY.jpg" alt="Yang Liu"><div><h3>Yang Liu</h3><p>Tongji University</p><a href="https://orcid.org/0000-0002-1312-0146">ORCID</a></div></article>
-        <article class="author-card"><img src="assets/photos/VictorL.png" alt="Victor C. M. Leung"><div><h3>Victor C. M. Leung</h3><p>SMBU, Shenzhen University, UBC</p><a href="https://orcid.org/0000-0003-3529-2640">ORCID</a></div></article>
-        <article class="author-card"><img src="assets/photos/ChenH.png" alt="Hong Chen"><div><h3>Hong Chen</h3><p>Tongji University</p><a href="https://orcid.org/0000-0002-1724-8649">ORCID</a></div></article>
+        <article class="author-card"><img src="assets/photos/HuangH.jpg?v=20260829-2" alt="Han Huang"><div><h3>Han Huang*</h3><p>Tongji University</p><a href="https://orcid.org/0009-0006-9396-0642">ORCID</a></div></article>
+        <article class="author-card"><img src="assets/photos/YangDK.png?v=20260829-2" alt="Dingkang Yang"><div><h3>Dingkang Yang*</h3><p>Fudan University, CUHK MMLab</p><a href="https://orcid.org/0000-0003-1829-5671">ORCID</a></div></article>
+        <article class="author-card"><img src="assets/photos/GuoLL.jpg?v=20260829-2" alt="Lulu Guo"><div><h3>Lulu Guo</h3><p>Tongji University</p><a href="https://orcid.org/0000-0003-2285-2469">ORCID</a></div></article>
+        <article class="author-card"><img src="assets/photos/CJ.jpg?v=20260829-2" alt="Jing Cheng"><div><h3>Jing Cheng</h3><p>East China Normal University</p><a href="https://orcid.org/0009-0004-7297-627X">ORCID</a></div></article>
+        <article class="author-card"><img src="assets/photos/LiuY.jpg?v=20260829-2" alt="Yang Liu"><div><h3>Yang Liu</h3><p>Tongji University</p><a href="https://orcid.org/0000-0002-1312-0146">ORCID</a></div></article>
+        <article class="author-card"><img src="assets/photos/VictorL.png?v=20260829-2" alt="Victor C. M. Leung"><div><h3>Victor C. M. Leung</h3><p>SMBU, Shenzhen University, UBC</p><a href="https://orcid.org/0000-0003-3529-2640">ORCID</a></div></article>
+        <article class="author-card"><img src="assets/photos/ChenH.png?v=20260829-2" alt="Hong Chen"><div><h3>Hong Chen</h3><p>Tongji University</p><a href="https://orcid.org/0000-0002-1724-8649">ORCID</a></div></article>
       </div>
     </section>
 
@@ -278,6 +284,6 @@
   </footer>
 
   <script src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
-  <script src="script.js"></script>
+  <script src="script.js?v=20260829-2"></script>
 </body>
 </html>
