@@ -1,13 +1,15 @@
 # World Models for Autonomous Driving
 
-Static GitHub Pages project page for the survey:
+Static project page for the survey **World Models for Autonomous Driving: From Future Generation to Decision Making**.
 
-**World Models for Autonomous Driving: From Future Generation to Decision Making**
+## Local preview
 
-## Local Preview
+Open `index.html` directly in a browser. No build step or package installation is required.
 
-Open `index.html` directly in a browser, or serve this folder with any static HTTP server. The paper PDF is `assets/World-Models-for-Autonomous-Driving.pdf`.
+## Content source
 
-## GitHub Pages
+The page content, PDF, bibliography, figures, method evidence codes, and author metadata are synchronized with:
 
-Publish from the repository root on the `main` branch. The site entry point is `index.html`.
+`E:\.survey\World Models for Autonomous Driving_FINAL\Manuscript`
+
+The deployed paper is stored at `assets/World-Models-for-Autonomous-Driving.pdf`. Rasterized web figures are stored in `assets/figures`.
