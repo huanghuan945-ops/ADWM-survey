@@ -1,0 +1,78 @@
+{
+  "revision": "2026-10-27",
+  "figures": [
+    {
+      "source": "figures/roadmap.pdf",
+      "source_sha256": "4eb8c093f165c1d6d105b56cf26e8a8cd66721c8251d77bb1df677ea959f8b8b",
+      "image": "figures/2026-10-27/roadmap.png",
+      "image_sha256": "12acc6cd37af47c293ec9e542ca98f15cc5a43619015a024be659fbc491c6818",
+      "width": 3135,
+      "height": 1781
+    },
+    {
+      "source": "figures/fig2_mpc_information_flow.pdf",
+      "source_sha256": "a24de6eae61b6edd062c5493dbcb6bafdf300088bb8143229ea5729671afea8f",
+      "image": "figures/2026-10-27/mpc-information-flow.png",
+      "image_sha256": "b8a596ba771b5768aee65ce989e8e8f83f8dfb4904b44febe86a034adff5b791",
+      "width": 3172,
+      "height": 1390
+    },
+    {
+      "source": "figures/fig3_overall_taxonomy.pdf",
+      "source_sha256": "8616908ae7abf065c4fd77caed3ee555dd8ae2e70fe8adef8b0c5b76971d3cfc",
+      "image": "figures/2026-10-27/taxonomy.png",
+      "image_sha256": "411fcce6c8fb31fe933e3bca5aee950f79e30d67e046c795aa3ebfa5cf5df0e4",
+      "width": 3190,
+      "height": 1587
+    },
+    {
+      "source": "figures/fig3_1_future_generation.pdf",
+      "source_sha256": "7add268838c0322a72eed138ff09dfe02f9e72564dee609c9b54fcfe6a27cb63",
+      "image": "figures/2026-10-27/future-generation.png",
+      "image_sha256": "124475fd4ef3f8aac868331159ef9453a1fb98dad4c1a36cb8b8b65735e9c9a9",
+      "width": 2775,
+      "height": 1525
+    },
+    {
+      "source": "figures/fig3_2_planning_world_models.pdf",
+      "source_sha256": "a8fe499270693578c091c1a611fe19c9d66846b82c3616d38c3513247736986c",
+      "image": "figures/2026-10-27/planning-world-models.png",
+      "image_sha256": "d19c9f880ef0566175d2d859bb7fa56a3494e943e8cbd0e921c808db30cf8ac7",
+      "width": 2806,
+      "height": 1768
+    },
+    {
+      "source": "figures/fig3_3_hybrid_world_models.pdf",
+      "source_sha256": "ce9555b59b2ecb964272902638961ff0bd8601e84bc1365d2fed82208ca3566c",
+      "image": "figures/2026-10-27/hybrid-world-models.png",
+      "image_sha256": "148a4673498ca3fdd3a05f3552975a9f5b293c1be46e1dbac7408cc71fc8a878",
+      "width": 2849,
+      "height": 1272
+    },
+    {
+      "source": "figures/fig6_future_challenges.pdf",
+      "source_sha256": "fefb651d990110503d98785afe27aa105ac122eba6ee04a21f13bdd65245c873",
+      "image": "figures/2026-10-27/future-challenges.png",
+      "image_sha256": "bdbaa8a64baf5730ef5a66c991789d3e64a686bb35a5b77ddab5feb77a17712f",
+      "width": 3182,
+      "height": 1020
+    }
+  ],
+  "documents": [
+    {
+      "source": "World Models for Autonomous Driving.pdf",
+      "asset": "World-Models-for-Autonomous-Driving.pdf",
+      "sha256": "72288cd92896adb77327e271df63cad3187e95c00a156b0177cb830c100fd063"
+    },
+    {
+      "source": "Supplementary_MPC_Evidence.pdf",
+      "asset": "Supplementary-MPC-Evidence.pdf",
+      "sha256": "a61a90cd89fd52d681c44230451978c1527541e46f64a98ce0bf1da4358b027d"
+    },
+    {
+      "source": "refs.bib",
+      "asset": "refs.bib",
+      "sha256": "e3fc1f56f60f859e4d52eed386663a8b65a410f4cd27f79fd27f066ccc0b5abd"
+    }
+  ]
+}
