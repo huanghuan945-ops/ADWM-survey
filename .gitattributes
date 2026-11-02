@@ -1,0 +1,2 @@
+# Preserve the bibliography bytes recorded in source-manifest.json.
+assets/refs.bib -text
