@@ -46,8 +46,6 @@ svg { width: 19px; height: 19px; flex: 0 0 auto; }
 
 .hero { border-bottom: 1px solid var(--line); background: #fff; }
 .hero-inner { max-width: 1100px; margin: 0 auto; padding: 56px 28px 42px; text-align: center; }
-.hero-kicker { display: flex; flex-wrap: wrap; justify-content: center; gap: 9px 20px; margin-bottom: 22px; color: var(--blue); font-size: 12px; font-weight: 750; text-transform: uppercase; }
-.hero-kicker span + span { padding-left: 20px; border-left: 1px solid var(--line); }
 .hero h1 { color: #194c8b; }
 .hero-subtitle { margin-top: 13px; color: #396b9e; font-size: 27px; font-weight: 500; line-height: 1.35; }
 .hero-thesis { max-width: 790px; margin: 22px auto 0; color: var(--muted); font-size: 18px; line-height: 1.65; }
@@ -297,14 +295,13 @@ figcaption span { flex-shrink: 0; color: var(--blue); font-weight: 750; }
   h1 { font-size: 36px; }
   h2 { font-size: 28px; }
   .hero-inner { padding: 32px 20px; }
-  .hero-kicker { font-size: 10px; gap: 7px 12px; margin-bottom: 18px; }
-  .hero-kicker span + span { padding-left: 12px; }
   .hero-subtitle { font-size: 21px; }
   .hero-thesis { font-size: 16px; }
   .author-line { font-size: 13px; gap: 5px 13px; }
   .affiliations { font-size: 11px; }
   .affiliations br { display: none; }
   .action-row { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .action-row .button-primary { grid-column: 1 / -1; }
   .button { padding: 0 10px; font-size: 13px; }
   .snapshot-inner > div { gap: 10px; padding: 16px 10px; }
   .snapshot-inner > div:first-child { padding-left: 10px; }

@@ -65,11 +65,6 @@
       "sha256": "72288cd92896adb77327e271df63cad3187e95c00a156b0177cb830c100fd063"
     },
     {
-      "source": "Supplementary_MPC_Evidence.pdf",
-      "asset": "Supplementary-MPC-Evidence.pdf",
-      "sha256": "a61a90cd89fd52d681c44230451978c1527541e46f64a98ce0bf1da4358b027d"
-    },
-    {
       "source": "refs.bib",
       "asset": "refs.bib",
       "sha256": "e3fc1f56f60f859e4d52eed386663a8b65a410f4cd27f79fd27f066ccc0b5abd"

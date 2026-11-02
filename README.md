@@ -12,7 +12,7 @@ The page content, PDF, bibliography, figures, method evidence codes, and author 
 
 `E:\.survey\World Models for Autonomous Driving_10.27`
 
-The deployed paper is stored at `assets/World-Models-for-Autonomous-Driving.pdf`; the evidence supplement is `assets/Supplementary-MPC-Evidence.pdf`.
+The deployed paper is stored at `assets/World-Models-for-Autonomous-Driving.pdf`.
 
 All seven figures cited in the manuscript are rendered from the source PDFs and stored alongside their original PDFs in `assets/figures/2026-10-27`. Only blank page margins are cropped. `assets/source-manifest.json` records the source and output SHA-256 hashes for verification.
 
