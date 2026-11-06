@@ -72,22 +72,43 @@ const methodRows = [...document.querySelectorAll(".method-table tbody tr")];
 const methodSearch = document.querySelector("[data-method-search]");
 const methodCount = document.querySelector("[data-method-count]");
 const emptyState = document.querySelector("[data-empty-state]");
+const mobileMethodList = document.querySelector("[data-mobile-methods]");
+const methodScroll = mobileMethodList?.closest(".table-wrap");
+const mobileMethodTemplate = document.querySelector("#mobile-method-template");
+const roleNames = { generation: "Generation", planning: "Planning", hybrid: "Hybrid", boundary: "Static comparator" };
+const mobileMethods = methodRows.map((row) => {
+  const entry = mobileMethodTemplate.content.firstElementChild.cloneNode(true);
+  entry.dataset.role = row.dataset.role;
+  entry.querySelector("strong").textContent = row.cells[0].querySelector("strong").textContent;
+  entry.querySelector("small").textContent = row.cells[0].querySelector("small").textContent;
+  entry.querySelector(".mobile-method-role").textContent = roleNames[row.dataset.role];
+  entry.querySelectorAll("dd").forEach((field, index) => {
+    field.textContent = row.cells[index + 1].textContent;
+  });
+  return entry;
+});
+mobileMethodList.append(...mobileMethods);
+methodScroll?.classList.add("has-mobile-methods");
 let activeFilter = "all";
 
 const updateMethodRows = () => {
   const query = methodSearch?.value.trim().toLowerCase() || "";
   let visibleCount = 0;
 
-  methodRows.forEach((row) => {
+  methodRows.forEach((row, index) => {
     const matchesRole = activeFilter === "all" || row.dataset.role === activeFilter;
     const matchesQuery = !query || row.textContent.toLowerCase().includes(query);
     const visible = matchesRole && matchesQuery;
     row.classList.toggle("is-hidden", !visible);
+    const entry = mobileMethods[index];
+    entry.hidden = !visible;
+    if (!visible) entry.open = false;
     if (visible) visibleCount += 1;
   });
 
   if (methodCount) methodCount.textContent = String(visibleCount);
   if (emptyState) emptyState.hidden = visibleCount !== 0;
+  if (methodScroll) methodScroll.scrollTop = 0;
 };
 
 filterButtons.forEach((button) => {
